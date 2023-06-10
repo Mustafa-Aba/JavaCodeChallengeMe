@@ -16,19 +16,26 @@ public class Task03 {
 		 	 \\S   ==> space disindaki hersey  */
 
     public static void main(String[] args) {
-        String  str1 = "$13.99";
+        String str1 = "$13.99"; //"13.99"
         String str2 = "$10.55";
-        str1=str1.replaceFirst("\\D","");
-        str2=str2.replaceFirst("\\D","");
+        System.out.println("str1 = " + str1);// $13.99
+        str1 = str1.replaceFirst("\\D", "");
+        System.out.println("str1 = " + str1);// 13.99
 
-        double d1= Double.parseDouble(str1);
-        double d2= Double.parseDouble(str2);
+        //str1 = str1.replace("\\D", "");
+        // System.out.println("str1 = " + str1);
+        System.out.println("str2 = " + str2); //$10.55
+        str2 = str2.replaceFirst("\\D", "");
+        System.out.println("str2 = " + str2); //10.55
 
-        System.out.println("d1 = " + d1);
-        System.out.println("d2 = " + d2);
-        System.out.println("(d1+d2) = $ " + (d1 + d2));
+        System.out.println(str1 + str2);
+        double str1indobleHali = Double.parseDouble(str1);// string olan str1 double olarak atandı
+        double str2indobleHali = Double.parseDouble(str2);// string olan str2 double olarak atandı
+        System.out.println(str1indobleHali);
+        System.out.println(str2indobleHali);
+        System.out.println(str1indobleHali + str2indobleHali);//24.54
 
-
+        // System.out.println("toplam : "+((Double.parseDouble(str1.replace("$", "")) + Double.parseDouble(str2.replace("$", "")))));
     }
 
 }

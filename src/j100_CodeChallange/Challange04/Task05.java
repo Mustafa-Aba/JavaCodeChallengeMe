@@ -13,14 +13,17 @@ public class Task05 {
      */
 
     public static void main(String[] args) {
-        Scanner scan=new Scanner(System.in);
-        System.out.println("4 Kelime giriniz : ");
-        String k1= scan.next();
-        String k2= scan.next();
-        String k3= scan.next();
-        String k4= scan.next();
+        Scanner input = new Scanner(System.in);
+        System.out.println("bizim ooolan arkaarkaya 4 kelime giresen :");
 
-        System.out.println(k1.toUpperCase().charAt(0)+k1.substring(1) + " " + k2 + " " + k3 + " " + k4 + ".");
+        String kelime1= input.next();
+        String kelime2= input.next();
+        String kelime3= input.next();
+        String kelime4= input.next();
+
+        System.out.println(kelime1.toUpperCase().charAt(0) + kelime1.substring(1)+" "+
+                kelime2+" "+kelime3+" "+kelime4+".");
+
 
     }
 
