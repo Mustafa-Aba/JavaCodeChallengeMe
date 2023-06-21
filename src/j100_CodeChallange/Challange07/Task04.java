@@ -20,14 +20,11 @@ public class Task04 {
         isaret(sayi);
         Task02.evenOrOdd(sayi);
         System.out.println((sayi >= 100 && sayi <= 999) ? "Sayının rakamlar toplamı= " + rakamlarTopla(sayi) : "Sayının birler basamağı= " + birler(sayi));
-
     }
     private static int birler(int sayi) {
         return sayi % 10;
     }
-
     private static int rakamlarTopla(int sayi) {
-
         int toplam = 0;
         while (sayi > 0) {
             toplam += sayi % 10;
@@ -35,8 +32,6 @@ public class Task04 {
         }
         return toplam;
     }
-
-
     private static void isaret(int sayi) {
         if (sayi > 0) {
             System.out.println("Sayı pozitiftir");

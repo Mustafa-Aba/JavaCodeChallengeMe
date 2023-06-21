@@ -14,27 +14,20 @@ public class Task05 {
 
     public static void main(String[] args) {
         getUser();
-        Kontrol();
-    }
-
-    private static void toplaSayi(int n) {
-        int toplam=0;
-        for (int i = 1; i <= n; i++) {
-            System.out.print(i+ " . sayıyı giriniz: ");
-            toplam+= input.nextInt();
-        }
-        System.out.println("Sayıların toplamı= " +toplam);
-    }
-
-    private static void Kontrol() {
-
         if (adet>4) {
             System.out.println("cok sayi girdiniz, ben toplayamam");
         } else if (adet<2) {
             System.out.println("En az 2 sayi girmelisiniz");
         }else
-            toplaSayi(adet);
-
+            System.out.println("Sayıların toplamı= " +toplaSayi(adet));
+    }
+    private static int toplaSayi(int n) {
+        int toplam=0;
+        for (int i = 1; i <= n; i++) {
+            System.out.print(i+ " . sayıyı giriniz: ");
+            toplam+= input.nextInt();
+        }
+        return toplam;
     }
 
     private static void getUser() {

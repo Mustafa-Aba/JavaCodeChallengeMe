@@ -11,7 +11,7 @@ public class Task03 {
         System.out.println("cm ölçüsünü giriniz: ");
         int cm=input.nextInt();
         double metre=cmToMetre(cm);
-        double km=metre/1000;
+        double km= meterToKm(cm);
 
         System.out.println(cm+" cm = " + metre+" m");
         System.out.println(cm+" cm = " + km+" km");
@@ -20,6 +20,10 @@ public class Task03 {
 
     private static double cmToMetre(int cm) {
         return cm*0.01;
+
+    }
+    private static double meterToKm(int cm) {
+        return cmToMetre(cm)*0.001;
 
     }
 
