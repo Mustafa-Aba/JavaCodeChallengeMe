@@ -11,11 +11,11 @@ public class Task01 {
 
         Scanner input = new Scanner(System.in);
         System.out.println("bizim ooolan adını soyadını gir bakennggg  :");
-       String  ad=input.next();
-       String soyad=input.next();
+        String ad = input.next();
+        String soyad = input.next();
 
-      System.out.println( ad.toUpperCase().concat(" " + soyad.toUpperCase()));
-      System.out.println( ad.toUpperCase()+" " + soyad.toUpperCase());
+        System.out.println(ad.toUpperCase().concat(" " + soyad.toUpperCase()));
+        System.out.println(ad.toUpperCase() + " " + soyad.toUpperCase());
     }
 
 }

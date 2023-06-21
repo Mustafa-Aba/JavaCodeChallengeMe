@@ -1,5 +1,7 @@
 package j100_CodeChallange.Challange04;
 
+import java.util.Scanner;
+
 public class Task07 {
 
     /* Task->
@@ -14,6 +16,11 @@ public class Task07 {
 
     public static void main(String[] args) {
 
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Metin giriniz : ");
+        String str = scan.nextLine();
+
+        System.out.println(str.contains("xyz"));
 
     }
 

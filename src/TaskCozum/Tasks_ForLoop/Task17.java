@@ -9,7 +9,7 @@ public class Task17 {
 
          */
         for (int i = 1; i <100 ; i++) {
-            if (i%20 ==0) { // veya (i%5 == 0 and i%4 == 0)
+            if (i%20 ==0) { // veya (i%5 == 0 && i%4 == 0)
                 System.out.print(i+" ");
             }
         }// 20 40 60 80

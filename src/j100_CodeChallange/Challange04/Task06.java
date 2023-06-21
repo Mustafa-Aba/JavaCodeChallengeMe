@@ -15,10 +15,20 @@ public class Task06 {
 */
     public static void main(String[] args) {
 
-        Scanner scan=new Scanner(System.in);
-        System.out.println("Metin giriniz : ");
-        String str=scan.next();
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Metin giriniz : ");
+        String str = scan.next();
 
+
+        if (str.startsWith("gh")) {
+            str = "gh" + str.substring(2);
+        } else if (str.startsWith("g")) {
+            str = "g" + str.substring(2);
+        } else if (str.charAt(1) == 'h') {
+            str = "h" + str.substring(2);
+        } else
+            str = str.substring(2);
+        System.out.println(str);
 
 
     }

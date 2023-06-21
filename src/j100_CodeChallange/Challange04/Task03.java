@@ -22,7 +22,7 @@ public class Task03 {
         str1 = str1.replaceFirst("\\D", "");
         System.out.println("str1 = " + str1);// 13.99
 
-        //str1 = str1.replace("\\D", "");
+        //str1 = str1.replaceAll("\\D", "");
         // System.out.println("str1 = " + str1);
         System.out.println("str2 = " + str2); //$10.55
         str2 = str2.replaceFirst("\\D", "");
