@@ -7,11 +7,23 @@ public class Task07 {
          *  2D arrayinden min number print den code create ediniz.
          */
 
-        int arr[][] = {{1, 2, 3}, {2, 3, 1}, {5, 5, 5}, {2, -1}};
+        int arr[][] = {{1, 2, 3}, {2, 3, 1}, {-5, 5, 5}, {2, -1}};
 
 
+        System.out.println("minMultiArray(arr) = " + minMultiArray(arr));
 
 
+    }
+    public static int minMultiArray(int[][] array) {
+        int min = array[0][0];
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                if (min>array[i][j]) {
+                    min=array[i][j];
+                }
+            }
+        }
+        return min;
     }
 
 

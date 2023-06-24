@@ -17,7 +17,7 @@ public class Task02 {
         System.out.println(isEven(sayi) ? "Çift sayı" : "Tek sayı");
     }
 
-    private static boolean isEven(int sayi) {
+    public static boolean isEven(int sayi) {
         return sayi % 2 == 0;
     }
 
