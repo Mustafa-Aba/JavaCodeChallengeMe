@@ -41,9 +41,9 @@ public class Task03_2DArrayList {
 
         multiArrayList.add(sirketler);
 
-
         // 2D ArrayList'i yazdırma
         System.out.println("multiArrayList = " + multiArrayList);
+
         for (List<String> row : multiArrayList) {
             for (String str : row) {
                 System.out.print(str + " ");

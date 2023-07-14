@@ -42,6 +42,7 @@ public class Task04_TopZıplamaMesafeSaysı {
         }
         System.out.println("yereVurmaSayisi = " + yereVurmaSayisi);
         System.out.println("topunToplamYolu = " + topunToplamYolu);
+        System.out.println(2+2*1.5+2*9.0/8+2*27.0/32);
     }
 
     private static void mySolution() {
@@ -51,7 +52,7 @@ public class Task04_TopZıplamaMesafeSaysı {
         double toplam = height;
         int sayac = 0;
 
-        while (height > 1) {
+        while (height >= 1) {
             height *= (0.75);
             toplam += 2 * height;
             sayac++;

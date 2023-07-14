@@ -1,5 +1,8 @@
 package j100_CodeChallange.InterviewQuestions;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Q17_SpecialCharRemoveArray {
     /*
    Problem Tanımı :
@@ -19,7 +22,19 @@ public class Q17_SpecialCharRemoveArray {
     */
 
     public static void main(String[] args) {
+        ArrayList<String> money = new ArrayList<>(Arrays.asList( "$13", "$15", "$20"));
 
+        System.out.println("getSum(money) = " + getSum(money));
+
+    }
+
+    private static int  getSum(ArrayList<String> money) {
+        int sum=0;
+        for (String w: money  ) {
+            sum+=Integer.parseInt(w.replace("$", ""));
+        }
+
+        return (sum<0)? -1 : sum;
     }
 
 
