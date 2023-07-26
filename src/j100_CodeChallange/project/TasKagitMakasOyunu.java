@@ -36,7 +36,7 @@ seçimini  kullanarak 3 puan alanın kazanan oldugu code create ediniz .
     }
 
     private static void gamerSecim() {
-        System.out.print("***Oyuncu İşlem Seciniz:***\n\tTas :\t '1'\n\tKagıt:\t '2'\n\tMakas:\t '3'\nsecim: ");
+        System.out.print("***İşlem Seciniz:***\n\tTas :\t '1'\n\tKagıt:\t '2'\n\tMakas:\t '3'\nsecim: ");
         gamer = input.nextInt();
         if (!(gamer>=1&&gamer<=3)) {
             System.out.println("Yanlış giriş yaptınız :( Tekrar deneyin. ");
@@ -45,6 +45,8 @@ seçimini  kullanarak 3 puan alanın kazanan oldugu code create ediniz .
     }
 
     private static void sonuc() {
+        System.out.println("gamerPuan = " + gamerPuan);
+        System.out.println("pcPuan = " + pcPuan);
         if (gamerPuan == 3) {
             System.out.println("Oyuncu kazandı.Tebrikler");
         } else

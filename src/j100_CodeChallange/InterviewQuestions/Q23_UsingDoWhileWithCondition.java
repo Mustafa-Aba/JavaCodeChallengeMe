@@ -12,10 +12,13 @@ public class Q23_UsingDoWhileWithCondition {
     */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.print("Bir sayi giriniz: ");
-        int sayi= input.nextInt();
-        System.out.println(sayi<100?"Won":"Lost");
 
+        System.out.println("Biiziim olan bisayı gireceng mi :");
+
+        int sayi = input.nextInt();
+        if (sayi<100) {
+            System.out.println("Won!");
+        }else System.out.println("Lost!");
 
     }
 

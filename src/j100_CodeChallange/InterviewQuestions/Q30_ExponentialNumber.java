@@ -1,5 +1,7 @@
 package j100_CodeChallange.InterviewQuestions;
 
+import java.util.Scanner;
+
 public class Q30_ExponentialNumber {
     //Task->
     // Get 2 numbers from the user.
@@ -13,6 +15,20 @@ public class Q30_ExponentialNumber {
     public static void main(String[] args) {
 
 
+        for (int i = 0; i < 10; i++) {
+            int zar1=(int)(Math.random()*6+1);
+            int zar2=(int)(Math.random()*6+1);
+
+            System.out.println("zar1 = " + zar1);
+            System.out.println("zar2 = " + zar2);
+            if ((zar1+zar2)==9) {
+                System.out.println("KAzandınız");
+            }else
+                System.out.println("Olmadı tekrar dene");
+
+        }
+
     }
+
 
 }

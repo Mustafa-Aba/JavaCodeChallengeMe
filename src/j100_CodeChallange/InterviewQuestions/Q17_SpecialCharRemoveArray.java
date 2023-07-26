@@ -22,20 +22,22 @@ public class Q17_SpecialCharRemoveArray {
     */
 
     public static void main(String[] args) {
-        ArrayList<String> money = new ArrayList<>(Arrays.asList( "$13", "$15", "$20"));
+        // ArrayList<String> money = new ArrayList<>(Arrays.asList("$13", "$15", "$20"));
+        ArrayList<String> money = new ArrayList<>(Arrays.asList("$11", "$-45", "$2"));
+        System.out.println(getSum(money));// 48
 
-        System.out.println("getSum(money) = " + getSum(money));
 
-    }
+    }//main sonu
 
-    private static int  getSum(ArrayList<String> money) {
-        int sum=0;
-        for (String w: money  ) {
-            sum+=Integer.parseInt(w.replace("$", ""));
+    private static int getSum(ArrayList<String> para) {
+        int toplam = 0;
+        for (String avuc : para) {
+            toplam += Integer.parseInt(avuc.replace("$", ""));
         }
 
-        return (sum<0)? -1 : sum;
+        if (toplam < 0) return -1;
+        else return toplam;
     }
 
 
-}
+}//Class sonu

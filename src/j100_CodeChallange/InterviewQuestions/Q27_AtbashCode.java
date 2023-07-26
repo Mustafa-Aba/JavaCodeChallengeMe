@@ -1,5 +1,7 @@
 package j100_CodeChallange.InterviewQuestions;
 
+import java.util.Scanner;
+
 public class Q27_AtbashCode {
     /*  Task->
       AtbashCode ; bir metni şifrelemek veya şifresini çözmek için İbrani alfabesine temelli basit bir yöntemdir.
@@ -10,10 +12,16 @@ public class Q27_AtbashCode {
       Girilen bir str'nin AtbashCode print eden code create ediniz.
      */
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Bir ifade giriniz");
+        String metin = input.nextLine();
 
+        String str1= "abcdefghijklmnopqrstuvwxyz";
+        String str2= "zyxwvutsrqponmlkjihgfedcba";
 
-    }
-
-
+        for (int i = 0; i <metin.length() ; i++) {
+            System.out.print(str2.charAt(str1.indexOf(metin.charAt(i))));
+        }
+   }
 
 }

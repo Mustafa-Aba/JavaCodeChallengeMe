@@ -11,8 +11,9 @@ public class GirisPaneli {
     public  void giris(){// bu tanımlama ile method non static oldg için obj ile call edilir
         Scanner sc = new Scanner(System.in);
 
-        Kayit yeniKayit = new Kayit();//Kayıt Calss'a erişim için p'siz cons. ile  yeniKayıt obj uretildi
-        //Kayıt Class'dan obj olmadanmethod call etmek için method'lar static yapılırsa ClassName ile call edilebilir
+        Kayit yeniKayit = new Kayit();//Kayıt Class'a erişim için p'siz cons. ile  yeniKayıt obj uretildi
+
+        //Kayıt Class'dan obj olmadan method call etmek için method'lar static yapılırsa ClassName ile call edilebilir
         ArrayList<Kullanici> kisi = new ArrayList<>();//Kulllanıcı Class'dan uretilen obj tutulacagi bos list
 
         boolean cikilsinMI = true;//while döngü için sart tanımlandı
@@ -21,12 +22,13 @@ public class GirisPaneli {
             int tercih = sc.nextInt();
             switch (tercih) {
                 case 1:
-                    kisi= yeniKayit.kayıtAl();//Kayıt Class'dan yeniKayıt obj kayıtAl() method call edildi
-
+                    kisi= yeniKayit.kayitAl();//Kayıt Class'dan yeniKayıt obj kayıtAl() method call edildi
                     break;
+
                 case 2:
                     yeniKayit.sansliKullanici(kisi);
                     break;
+
                 case 3:
                     yeniKayit.listele(kisi);
                     break;

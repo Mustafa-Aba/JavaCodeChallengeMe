@@ -9,7 +9,7 @@ public class Kayit {
     ArrayList<Kullanici> kullaniciKisiler = new ArrayList<>();//kullanıcı class'dan olusturlacak obj tutulacagı bos list
 
     //Task 2. step
-    public ArrayList<Kullanici> kayıtAl() {//kullanıcı Class'dan onj uretmek için cons.'a gereken name ve kayıtzamanı
+    public ArrayList<Kullanici> kayitAl() {//kullanıcı Class'dan onj uretmek için cons.'a gereken name ve kayıtzamanı
         // bilgilerini olusturrp olusan obj'i list'e ekler
         Scanner sc = new Scanner(System.in);
         System.out.print("agam adını giresen : ");
@@ -25,17 +25,17 @@ public class Kayit {
         //az olup olmamasına göre sanslı kullanıcı print edecek
         for (Kullanici k : kllObj) {//Kullanıcı Class'dan kayıtAl() method ile uretilip kullanıcıKişi list'ine eklene
             //  objler döngüye alın
-            if (k.kayıtZamanı.getSecond() <= 10) {//döngüye herbir kullanıc obj kayıtzamanı datasındaki saniye verisi
+            if (k.kayitZamani.getSecond() <= 10) {//döngüye herbir kullanıc obj kayıtzamanı datasındaki saniye verisi
                 // 10'dan kucuk olma sartı
-                System.out.println(k.name + " agam sanslı kişisin 5 kilo BAL kazandın :) sisteme giriş zamanın :  " + k.kayıtZamanı);
+                System.out.println(k.name + " agam sanslı kişisin 5 kilo BAL kazandın :) sisteme giriş zamanın :  " + k.kayitZamani);
             } else
-                System.out.println(k.name + " agam sanslı kişisin degilsen :( BAL'ı NAH'sıl kazanacaksın Kovan yağmalandı   sisteme giriş zamanın :  " + k.kayıtZamanı);
+                System.out.println(k.name + " agam sanslı kişisin degilsen :( BAL'ı NAH'sıl kazanacaksın Kovan yağmalandı   sisteme giriş zamanın :  " + k.kayitZamani);
         }
 
     }
 
     public void listele(ArrayList<Kullanici> kllObj) {
-        System.out.println(kllObj);//obj 'leri Kuulanıcı Class'daki toString print eder
+        System.out.println(kllObj);//obj 'leri Kullanıcı Class'daki toString print eder
     }
 
 

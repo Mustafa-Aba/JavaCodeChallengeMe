@@ -13,6 +13,18 @@ public class Q29_SurviveMonkey {
     */
     public static void main(String[] args) {
 
+        int numberOfBananas = 165, survivalDays = 1;
+        boolean monkeyAlive = true;
+
+        while (monkeyAlive) {
+            numberOfBananas -= 4;
+            survivalDays++;
+            if (numberOfBananas<4) {
+                monkeyAlive=false;
+            }
+        }
+        System.out.println("survivalDays = " + survivalDays);
+
     }
 
 }

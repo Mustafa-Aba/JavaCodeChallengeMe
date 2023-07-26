@@ -1,6 +1,6 @@
-package j100_CodeChallange.InterviewQuestions.InterviewQuestions;
+package j100_CodeChallange.InterviewQuestions;
 
-public class Q33_CollectionsMethodsTask {
+public class Q33_ListCollectionsMethodsTask {
     // part 1: create list of 5 numbers from user input
     // sort the list in reverse order and print it
     // shuffle the list and print it

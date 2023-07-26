@@ -1,8 +1,5 @@
 package j100_CodeChallange.InterviewQuestions;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Objects;
 import java.util.Scanner;
 
 public class Q24_CountsOfRepeatingElement {
@@ -13,19 +10,23 @@ public class Q24_CountsOfRepeatingElement {
      */
 
     public static void main(String[] args) {
-        int[] numArray = {1, 2, 5, 1, 4, 7, 2, 3, 6, 4, 2};
+        int[] arr = {1, 1, 1, 3, 6, 8, 4, 5, 6, 7, 5, 4, 9, -6, -6, 0, 2, 0, 2, 2, 2, 0};
+
         Scanner input = new Scanner(System.in);
-        System.out.print("Bir sayi giriniz: ");
-        int sayi = input.nextInt();
 
-        countElements(numArray, sayi);
-    }
+        System.out.println("Biiziim olan bisayı gireceng mi :");
 
-    private static void countElements(int[] numArray, int n) {
-        int count=0;
-        for (int w : numArray) {
-            if(n==w) count++;
+        int sayi = input.nextInt();//10
+        int tekrarSayisi=0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i]==sayi) tekrarSayisi++;
         }
-        System.out.println("count = " + count);
+
+        System.out.println("istenen sayi : "+sayi+" arrayda "+tekrarSayisi+" kadar kullanıldı");
+
+
+
+
+
     }
 }

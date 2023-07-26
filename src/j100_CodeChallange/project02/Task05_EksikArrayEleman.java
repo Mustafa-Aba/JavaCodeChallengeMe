@@ -31,7 +31,7 @@ public class Task05_EksikArrayEleman {
 
     }
 
-    private static void eksikSayiyiBul(int... arr) {
+    private static void eksikSayiyiBul(int[] arr) {
         Arrays.sort(arr);
 //        for (int i = 0; i < arr.length; i++) {
 //            if (arr[i] != (i + 1)) {
@@ -45,10 +45,16 @@ public class Task05_EksikArrayEleman {
 //        }
         //baska bir yol
 
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < arr.length-1; i++) {
 
-                if (arr[i]-arr[i+1]==2) {
-                    System.out.println("eksik sayi: " + (i + 1));
+                if (arr[i+1]-arr[i]==2) {
+                    System.out.println("eksik sayi: " + (arr[i] + 1));
+                    break;
+                } else if (arr[arr.length-1]==9 ) {
+                    System.out.println("eksik sayi: " + 10);
+                    break;
+                } else if (arr[0]!=1) {
+                    System.out.println("eksik sayi: " + 1);
                     break;
                 }
 

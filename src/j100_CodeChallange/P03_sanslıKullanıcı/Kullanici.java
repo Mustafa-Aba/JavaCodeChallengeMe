@@ -6,17 +6,15 @@ import java.time.LocalDateTime;
 public class Kullanici {//kullanıcı obj uretecek kalıphane class -> main olmaz
 
     String name;//obj de değer alacak inst. var.
-    LocalDateTime kayıtZamanı;//obj de değer alacak inst. var.
+    LocalDateTime kayitZamani;//obj de değer alacak inst. var.
 
-    public Kullanici(String name, LocalDateTime kayıtZamanı) {//full p'li teleskopik cons.
+    public Kullanici(String name, LocalDateTime kayitZamani) {//full p'li teleskopik cons.
         this.name = name;
-        this.kayıtZamanı = kayıtZamanı;
+        this.kayitZamani = kayitZamani;
     }
 
     @Override
     public String toString() {//bu class'dan olusturulan obj print etmek için obj datalarını string'e cevirir
-        return
-                "name='" + name + '\'' +
-                        ", kayıtZamanı=" + kayıtZamanı;
+        return "name='" + name + "', kayıtZamanı= " + kayitZamani;
     }
 }

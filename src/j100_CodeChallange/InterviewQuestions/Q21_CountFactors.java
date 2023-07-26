@@ -1,6 +1,5 @@
 package j100_CodeChallange.InterviewQuestions;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Q21_CountFactors {
@@ -12,24 +11,33 @@ public class Q21_CountFactors {
      Factors of 8  = 1, 2, 4, 8 ==> 4
 */
     public static void main(String[] args) {
-
         Scanner input = new Scanner(System.in);
-        System.out.println("Bir sayi giriniz: ");
+
+        System.out.println("Biiziim olan bisayı gireceng mi :");
+
         int sayi = input.nextInt();
-        System.out.println(sayi + "sayısnın bölenleri = " + factors(sayi));
+        System.out.println("   *** while ***   ");
+        int bolenSayisi = 0;
+        int bolen = 1;
 
-    }
+        while (bolen <= sayi) {//1,2,3,...sayi tekrarı tanımlandı
+            if (sayi % bolen == 0) {//tekrardaki herbir sayını girilen sayıyı tam bolme sartı
+                bolenSayisi++;
 
-    private static ArrayList<Integer> factors(int sayi) {
-        ArrayList<Integer> answer = new ArrayList<>();
-        int count = 0;
+                System.out.print(bolen + " ");
+            }
+            bolen++;
+        }
+        System.out.println();
+        System.out.println("   *** for ***   ");
         for (int i = 1; i <= sayi; i++) {
             if (sayi % i == 0) {
-                answer.add(i);
-                count++;
+                bolenSayisi++;
+                System.out.print(i + " ");
             }
+
         }
-        System.out.println("Toplan bölen sayısı = " + count);
-        return answer;
+        System.out.println();
+        System.out.println(sayi + " nın " + bolenSayisi + " tane tam boleni vardır ");
     }
 }
